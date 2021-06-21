@@ -1,23 +1,24 @@
-theme = "bento"
-languageCode = "en-us"
-baseurl = "https://www.example.com/"
-title = "Bento"
++++
+author = "Bento"
+title = "Configuring the theme"
+date = "2020-07-04"
+description = "A brief post showing all configuration options"
+tags = [
+    "theme",
+]
++++
 
-author = "Leonardo Faria"
-copyright = "MIT"
+Sharing the [`config.toml`](https://github.com/leonardofaria/bento/blob/master/exampleSite/config.toml) used in this website:
 
-[taxonomies]
-category = "categories"
-tag = "tags"
-
+```toml
 # Better code higlighting
 # via https://discourse.gohugo.io/t/pygmentscodefences-how-to-choose-themes/3842/3
 pygmentsCodefences = true
 pygmentsStyle = "vs"
 
 # Integrations
-googleAnalytics = "UA-XXXXXX-YY"
-disqusShortname = "bento-hugo-theme"
+googleAnalytics = "UA-XXXXXX-XX"
+disqusShortname = "your-disqus-shortname"
 
 # Hightlight theme
 [markup.highlight]
@@ -46,27 +47,10 @@ disqusShortname = "bento-hugo-theme"
   linkedin = "https://linkedin.com/in/XXXX"
   email = "email@xxxx.com"
 
-  # Learn more about webmention 
-  # https://sebastiandedeyne.com/adding-webmentions-to-my-blog/
-  # webmention = ""
-  # productionBaseUrl is need if you want to receive webmentions in local environment
-  # productionBaseUrl = "https://yourwebsite.com"
-
   # Avatar (shown in the homepage)
   avatar = "images/avatar.jpg"
   # Bio is shown in the end of posts
-  authorBio = "Bento is a doggo who likes to code. Follow him on <a href='#'>Twitter</a>"
-
-# If you want to use fathom (https://usefathom.com) for analytics, add this section
-[params.fathomAnalytics]
-  siteID = "XXXXX"
-  # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-  serverURL = "analytics.example.com"
-
-# If you want to use umami (https://umami.is/) for analytics, add this section
-[params.umami]
-  siteID = "XXXXX"
-  trackerScript = "//umami.example.com/umami.js"
+  authorBio = "Bento is a doggo who likes to code. Follow him on <a href='https://twitter.com/XXX'>Twitter</a>"
 
 # Items in the top menu
 [menu]
@@ -84,3 +68,5 @@ disqusShortname = "bento-hugo-theme"
       name = "Source code"
       url = "https://github.com/leonardofaria/bento"
       weight = 1
+
+```
