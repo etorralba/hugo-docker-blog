@@ -5,7 +5,7 @@ services:
    
     hugo:
         build: 
-            context: .
+            context: ./hugo
         image: hugobase
         volumes:
             - "./hugo:/hugodir"
