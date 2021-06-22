@@ -7,5 +7,3 @@ RUN chmod +x /hugostart.sh
 ENTRYPOINT ["/hugostart.sh"]
 EXPOSE 1313
 
-FROM nginx
-COPY static-html-directory /usr/share/nginx/html
