@@ -12,14 +12,9 @@ clean:
 		sudo rm -R hugo/resources
 		sudo rm -R hugo/static
 		sudo rm -R hugo/themes
-		sudo rm -R hugo/config.toml
 		sudo rm -R hugo/package-lock.json
 		sudo rm -R hugo/package.json
+		sudo rm -R hugo/config.toml
 		
-
-
-		
-
-
 start:
 		docker-compose up
