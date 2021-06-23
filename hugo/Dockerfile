@@ -7,3 +7,4 @@ RUN chmod +x /hugostart.sh
 ENTRYPOINT ["/hugostart.sh"]
 EXPOSE 1313
 
+FROM nginx:alpine as nginx-prod
